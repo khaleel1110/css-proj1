@@ -2,9 +2,14 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap">
+
     <style>
-        body {
-            background-color: #da4a01;
+     body {
+       
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px; 
+            background-color: #282A35;
             margin: 0px;
         }
 
@@ -12,7 +17,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
         }
 
         .flex-container {
@@ -26,18 +31,16 @@
 
 
         .flex-container>.item {
-            width: 50px;
+
             height: 15px;
-            background-color: #D9D9D9;
 
             margin: 10px;
 
         }
 
         .flex-container>.logo-part {
-            width: 20px;
+
             height: 20px;
-            background-color: #D9D9D9;
 
             margin: 10px;
 
@@ -47,7 +50,7 @@
         .flex-container2 {
             display: flex;
             flex-direction: row;
-            justify-content: flex-start;
+            justify-content: flex-end;
 
 
 
@@ -55,16 +58,21 @@
 
 
         .flex-container2>.item {
-            width: 50px;
-            height: 20px;
-            background-color: #D9D9D9;
 
+
+            padding: 5px;
             border-radius: 10px;
             margin: 10px;
             margin-right: 4px;
             margin-left: 2px;
 
         }
+
+        .color_flex {
+            color: #D4D4D4;
+        }
+
+
 
         .flex-center {
 
@@ -81,16 +89,16 @@
 
             margin-right: 24px;
 
-            width: 50px;
+            color: #D4D4D4;
             height: 15px;
 
-            background-color: #D9D9D9;
+
         }
 
         .overralparent {
 
             width: 400px;
-            
+
             padding: 20px;
             padding-top: 5opx;
             margin-right: auto;
@@ -104,7 +112,12 @@
         .box1 {
             width: 400px;
             height: 50px;
-            background-color: #D9D9D9;
+
+
+
+            font-size: xx-large;
+            text-align: center;
+            color: #D4D4D4;
 
 
         }
@@ -122,9 +135,9 @@
 
         .child1-box2 {
             display: flex;
-            width: 200px;
-            height: 10px;
-            background-color: #D9D9D9;
+
+
+            color: #D4D4D4;
 
 
             margin-bottom: 10px;
@@ -132,9 +145,10 @@
 
         .child2-box2 {
 
-            width: 150px;
-            height: 10px;
-            background-color: #D9D9D9;
+
+
+            color: #D4D4D4;
+
 
         }
 
@@ -149,7 +163,7 @@
 
             width: 800px;
             height: 300px;
-        
+
             margin: px;
             margin-top: 0px;
             margin-left: auto;
@@ -158,63 +172,58 @@
             padding-top: 50px;
 
 
-
-
         }
-
-
 
         .main-bigbox>.ten {
 
-
-
             .bod1 {
-
-        
                 display: flex;
                 align-items: center;
                 flex-direction: column;
-                border-color: black;
                 width: 265px;
-                background-color: #430259;
                 height: 300px;
-                margin: 0px;
-                margin-top: 0px;
-
-                padding-top: 0px;
-
-
-
+                padding-bottom: 50px;
 
             }
 
             .bod1>.logg {
 
+                border-style: solid;
+                border-radius: 20px;
+                border-width: 2px;
+                border-color: #D4D4D4;
+                color: #D4D4D4;
                 width: 100px;
-                height: 90px;
-                padding-bottom: px;
-                background-color: #D9D9D9;
-
+                height: 140px;
+                padding: 10px;
+                padding-bottom: 20pxpx;
+                padding-top: 30px;
                 margin: 20px;
-
+                font-size: 60px;
+                text-align: center;
 
             }
 
             .bod1>.second-logg {
-                width: 100px;
-                height: 40px;
 
-                background-color: #D9D9D9;
+                border-style: solid;
+                border-color: #D4D4D4;
+                border-width: 2px;
+                padding: 5px;
+                height: 40px;
+                color: #D4D4D4;
+
 
                 margin: 20px;
             }
 
             .bod1>.third-logg {
-                width: 200px;
+
                 height: 10px;
                 margin: 5px;
+                font-size: small;
+                color: #D4D4D4;
 
-                background-color: #D9D9D9;
 
             }
         }
@@ -237,6 +246,29 @@
 
             margin: 10px;
 
+
+
+        }
+
+        .primary-color {
+            background-color: rgb(77, 151, 77);
+            color: #D4D4D4;
+        }
+
+        .secondary-color {
+            background-color: #D9EEE1;
+        }
+
+        .color1 {
+            background-color: #846BAE;
+        }
+
+        .color2 {
+            background-color: #4a3e5e;
+        }
+
+        .color3 {
+            background-color: #6C3EC1;
         }
     </style>
 </head>
@@ -245,18 +277,20 @@
 
     <div class="header1-parent">
         <div class="flex-container">
-            <div class="logo-part"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+
+            <img class="logo-part" src="logo2.png" />
+
+            <div class="item"> Excercises</div>
+            <div class="item">Certificates</div>
+            <div class="item">Services</div>
         </div>
 
 
         <div class="flex-container2">
-            <div class="item"></div>
-            <div class="item"></div>
-        </div>
+            <div class="item primary-color "> Sing up</div>
 
+            <div class="item secondary-color"> log in</div>
+        </div>
 
     </div>
 
@@ -264,28 +298,34 @@
 
 
     <div class="flex-center">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JAVASCRIPT</div>
+        <div>SQL</div>
+        <div>PYTHON</div>
+        <div>JAVA</div>
+        <div>PHP</div>
+        <div>HOW TO</div>
+        <div>W3.SCC</div>
+        <div>C++</div>
+        <div>REACT</div>
+        <div>MY SQL</div>
+        <div>MY SQL</div>
+        <div>EXCEL</div>
+        <div>R</div>
+        <div>TYPE SCRIPT</div>
+        <div>C#</div>
+
 
 
     </div>
 
     <div class="overralparent">
-        <div class="box1"> </div>
+        <div class="box1">Bootstrap Versions </div>
 
         <div class="box2">
-            <div class="child1-box2"></div>
-            <div class="child2-box2"></div>
+            <div class="child1-box2">bootstrap is the world's most famous free CSS framework.</div>
+            <div class="child2-box2">you can choose between the following versions:</div>
         </div>
 
     </div>
@@ -294,21 +334,18 @@
     <div class="main-bigbox">
 
 
-        <div class="ten">
+        <div class="ten color1">
 
             <div>
                 <div class="bod1">
-                    <div class="logg"></div>
-                    <div class="second-logg">
+                    <div class="logg">B3</div>
+                    <div class="second-logg">Learn Bootstrap 3>></div>
 
 
-
-                    </div>
-
-                    <div class="third-logg"></div>
-                    <div class="third-logg"></div>
-                    <div class="third-logg"></div>
-                    <div class="third-logg"></div>
+                    <div class="third-logg">Bootstrap3 is the most suitsble version of</div>
+                    <div class="third-logg">Bootstrap, and its the support by the team</div>
+                    <div class="third-logg">for critical box fixes and documentation</div>
+                    <div class="third-logg">changes</div>
 
 
 
@@ -321,23 +358,19 @@
             </div>
         </div>
 
-        <div class="ten">
+
+        <div class="ten color2">
 
             <div>
                 <div class="bod1">
-                    <div class="logg"></div>
-                    <div class="second-logg">
+                    <div class="logg">B4</div>
+                    <div class="second-logg">Learn Bootstrap 4>></div>
 
 
-
-                    </div>
-
-                    <div class="third-logg"></div>
-                    <div class="third-logg"></div>
-                    <div class="third-logg"></div>
-                    <div class="third-logg"></div>
-
-
+                    <div class="third-logg">Bootstrap4 is the new version of bootstrap;</div>
+                    <div class="third-logg">with new component, faster stylsheet and</div>
+                    <div class="third-logg">more responsiveness.however internet</div>
+                    <div class="third-logg">explorer9 and down is not supported</div>
 
 
 
@@ -348,21 +381,20 @@
             </div>
         </div>
 
-        <div class="ten">
+
+        <div class="ten color3">
 
             <div>
                 <div class="bod1">
-                    <div class="logg"></div>
-                    <div class="second-logg">
+                    <div class="logg">B5</div>
+                    <div class="second-logg">Learn Bootstrap 3>></div>
 
 
-
-                    </div>
-
-                    <div class="third-logg"></div>
-                    <div class="third-logg"></div>
-                    <div class="third-logg"></div>
-                    <div class="third-logg"></div>
+                    <div class="third-logg">Bootstrap5 is the newewst version of</div>
+                    <div class="third-logg">Bootstarp with a smoth overhaul. however,</div>
+                    <div class="third-logg">internet explorer11, and down is not</div>
+                    <div class="third-logg">supported and querry is represented by vanilla</div>
+                    <div class="third-logg">javascript</div>
 
 
 
@@ -376,6 +408,9 @@
         </div>
     </div>
 
+    <div>
+    </div>
+    <div style="padding: 50px;"></div>
 
 </body>
 
